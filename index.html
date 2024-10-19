@@ -1,0 +1,21 @@
+<html>
+  <body>
+    <h1>Hai Intan</h1>
+    <img src="rizal.jpg" height="100px" left="100px" />
+    <h1>mau ga jadi pacar ku</h1>
+    <button id="btn_mau" onclick="alert('I LOVE YOU')">mau</button>
+    <button id="btn_gamau" onclick="gamau(this)" style="position: absolute">
+      gamau
+    </button>
+  </body>
+  <script>
+    function gamau(id) {
+      var i = Math.floor(Math.random() * 300); // Random number for 'left'
+      var j = Math.floor(Math.random() * 300); // Random number for 'top'
+
+      // Update button's position
+      id.style.left = i + "px";
+      id.style.top = j + "px";
+    }
+  </script>
+</html>
